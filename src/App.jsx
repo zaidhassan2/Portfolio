@@ -12,7 +12,7 @@ import Contact from "./components/Contact";
 
 const App = () => {
   return (
-    <BrowserRouter basename="/Portfolio">
+    <BrowserRouter basename="/Portfolio/">
       <div className='relative z-0 bg-primary'>
         <Navbar />
         <Routes>
