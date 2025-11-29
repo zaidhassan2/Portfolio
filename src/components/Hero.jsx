@@ -3,7 +3,7 @@ import { styles } from "../styles";
 import CoreCanvas from "./canvas/Core";
 
 import { Typewriter } from 'react-simple-typewriter'
-import { Github, Linkedin, Mail } from 'lucide-react'
+import { Github, Linkedin, Mail, Download } from 'lucide-react'
 import profile from '../assets/profile.png'
 
 const Hero = () => {
@@ -37,16 +37,42 @@ const Hero = () => {
                             </span>
                         </p>
 
-                        <div className="mt-8 flex gap-4">
-                            <a href="https://github.com/zaidhassan2" target="_blank" rel="noopener noreferrer" className="bg-tertiary p-3 rounded-full border border-[#00F0FF]/20 hover:border-[#00F0FF] hover:bg-[#00F0FF]/10 transition-all">
-                                <Github className="text-white w-6 h-6" />
-                            </a>
-                            <a href="#" className="bg-tertiary p-3 rounded-full border border-[#00F0FF]/20 hover:border-[#00F0FF] hover:bg-[#00F0FF]/10 transition-all">
-                                <Linkedin className="text-white w-6 h-6" />
-                            </a>
-                            <a href="mailto:zaid@example.com" className="bg-tertiary p-3 rounded-full border border-[#00F0FF]/20 hover:border-[#00F0FF] hover:bg-[#00F0FF]/10 transition-all">
-                                <Mail className="text-white w-6 h-6" />
-                            </a>
+                        <div className="mt-8 flex flex-col gap-6">
+                            <div className="flex gap-4">
+                                <a href="https://github.com/zaidhassan2" target="_blank" rel="noopener noreferrer" className="bg-tertiary p-3 rounded-full border border-[#00F0FF]/20 hover:border-[#00F0FF] hover:bg-[#00F0FF]/10 transition-all">
+                                    <Github className="text-white w-6 h-6" />
+                                </a>
+                                <a href="https://www.linkedin.com/in/zaid-hassan-2a1990332?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" className="bg-tertiary p-3 rounded-full border border-[#00F0FF]/20 hover:border-[#00F0FF] hover:bg-[#00F0FF]/10 transition-all">
+                                    <Linkedin className="text-white w-6 h-6" />
+                                </a>
+                                <a href="mailto:zaid786276@gmail.com" className="bg-tertiary p-3 rounded-full border border-[#00F0FF]/20 hover:border-[#00F0FF] hover:bg-[#00F0FF]/10 transition-all">
+                                    <Mail className="text-white w-6 h-6" />
+                                </a>
+                            </div>
+
+                            <motion.a
+                            href="https://drive.google.com/uc?export=download&id=1AbfhQSELBuMMcpM-K7oX6CUOf0SJInRM
+                            " download="Muhammad_Zaid_Hassan_CV.pdf" // Replace with actual Google Drive link
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="relative inline-flex items-center justify-center px-8 py-3 overflow-hidden font-bold text-white rounded-full group bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-400 hover:to-blue-400 transition-all duration-300 shadow-[0_0_20px_rgba(0,240,255,0.5)] hover:shadow-[0_0_40px_rgba(0,240,255,0.8)] w-fit"
+                                whileHover={{ scale: 1.05 }}
+                                whileTap={{ scale: 0.95 }}
+                                animate={{
+                                    boxShadow: ["0px 0px 0px rgba(0,240,255,0)", "0px 0px 20px rgba(0,240,255,0.5)", "0px 0px 0px rgba(0,240,255,0)"],
+                                }}
+                                transition={{
+                                    duration: 2,
+                                    repeat: Infinity,
+                                    ease: "easeInOut"
+                                }}
+                            >
+                                <span className="absolute w-0 h-0 transition-all duration-500 ease-out bg-white rounded-full group-hover:w-56 group-hover:h-56 opacity-10"></span>
+                                <span className="relative flex items-center gap-2">
+                                    <Download className="w-5 h-5 animate-bounce" />
+                                    Download CV
+                                </span>
+                            </motion.a>
                         </div>
                     </div>
                 </div>

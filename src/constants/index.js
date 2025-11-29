@@ -18,6 +18,11 @@ export const navLinks = [
         id: "contact",
         title: "Contact",
     },
+    {
+        id: "blog",
+        title: "Blog",
+        path: "/blog",
+    },
 ];
 
 const services = [
@@ -152,7 +157,7 @@ const projects = [
             },
         ],
         image: contact_book,
-        source_code_link: "https://github.com/zaidhassan2/Contact-Book",
+        source_code_link: "https://github.com/zaidhassan2/Mini-Instagram",
     },
     {
         name: "Healthcare System",
@@ -215,7 +220,7 @@ const projects = [
             },
         ],
         image: ecommerce,
-        source_code_link: "https://github.com/zaidhassan2", // Added link
+        source_code_link: "https://github.com/zaidhassan2/Amazon-Website", // Added link
     },
 ];
 
