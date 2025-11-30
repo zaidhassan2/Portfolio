@@ -51,8 +51,7 @@ const Hero = () => {
                             </div>
 
                             <motion.a
-                            href="https://drive.google.com/uc?export=download&id=1AbfhQSELBuMMcpM-K7oX6CUOf0SJInRM
-                            " download="Muhammad_Zaid_Hassan_CV.pdf" // Replace with actual Google Drive link
+                                href="https://drive.google.com/uc?export=download&id=1AbfhQSELBuMMcpM-K7oX6CUOf0SJInRM" download="Muhammad_Zaid_Hassan_CV.pdf" // Replace with actual Google Drive link
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="relative inline-flex items-center justify-center px-8 py-3 overflow-hidden font-bold text-white rounded-full group bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-400 hover:to-blue-400 transition-all duration-300 shadow-[0_0_20px_rgba(0,240,255,0.5)] hover:shadow-[0_0_40px_rgba(0,240,255,0.8)] w-fit"
