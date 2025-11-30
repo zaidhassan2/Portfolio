@@ -50,28 +50,26 @@ const Hero = () => {
                                 </a>
                             </div>
 
-                            <motion.a
-                                href="https://drive.google.com/uc?export=download&id=1AbfhQSELBuMMcpM-K7oX6CUOf0SJInRM" download="Muhammad_Zaid_Hassan_CV.pdf" // Replace with actual Google Drive link
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="relative inline-flex items-center justify-center px-8 py-3 overflow-hidden font-bold text-white rounded-full group bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-400 hover:to-blue-400 transition-all duration-300 shadow-[0_0_20px_rgba(0,240,255,0.5)] hover:shadow-[0_0_40px_rgba(0,240,255,0.8)] w-fit cursor-pointer touch-manipulation z-50"
+                            <motion.div
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
-                                animate={{
-                                    boxShadow: ["0px 0px 0px rgba(0,240,255,0)", "0px 0px 20px rgba(0,240,255,0.5)", "0px 0px 0px rgba(0,240,255,0)"],
-                                }}
-                                transition={{
-                                    duration: 2,
-                                    repeat: Infinity,
-                                    ease: "easeInOut"
-                                }}
+                                className="relative z-50"
                             >
-                                <span className="absolute w-0 h-0 transition-all duration-500 ease-out bg-white rounded-full group-hover:w-56 group-hover:h-56 opacity-10"></span>
-                                <span className="relative flex items-center gap-2">
-                                    <Download className="w-5 h-5 animate-bounce" />
-                                    Download CV
-                                </span>
-                            </motion.a>
+                                <a
+                                    href="https://drive.google.com/uc?export=download&id=1AbfhQSELBuMMcpM-K7oX6CUOf0SJInRM"
+                                    download="Muhammad_Zaid_Hassan_CV.pdf"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    onClick={() => console.log("CV Button Clicked")}
+                                    className="relative inline-flex items-center justify-center px-8 py-3 overflow-hidden font-bold text-white rounded-full group bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-400 hover:to-blue-400 transition-all duration-300 shadow-[0_0_20px_rgba(0,240,255,0.5)] hover:shadow-[0_0_40px_rgba(0,240,255,0.8)] w-fit cursor-pointer z-50 pointer-events-auto"
+                                >
+                                    <span className="absolute w-0 h-0 transition-all duration-500 ease-out bg-white rounded-full group-hover:w-56 group-hover:h-56 opacity-10"></span>
+                                    <span className="relative flex items-center gap-2">
+                                        <Download className="w-5 h-5 animate-bounce" />
+                                        Download CV
+                                    </span>
+                                </a>
+                            </motion.div>
                         </div>
                     </div>
                 </div>
