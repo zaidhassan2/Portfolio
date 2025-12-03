@@ -1,6 +1,6 @@
 
-import Urdu from "../assets/Urdu_Audio_ROC_Comparison.png";
-import DefectPrediction from "../assets/Model_Comparison.png"
+// import Urdu from "../assets/Urdu_Audio_ROC_Comparison.png";
+// import DefectPrediction from "../assets/Model_Comparison.png"
 import apiTestingBanner from "../assets/api.png"
 // import os_sim from "../assets/os_sim.png";
 // import contact_book from "../assets/contact_book.png";
@@ -66,7 +66,7 @@ export const blogPosts = [
   //   tags: ["NLP", "Scikit-Learn", "Text Classification", "DevOps", "Python"],
   // },
 {
-  id: 3, // Change this ID if you have other posts
+  id: 1, // Change this ID if you have other posts
   title: "Architecting a Hybrid API Automation & Performance Framework",
   date: "December 3, 2025",
   category: "Assignment",
