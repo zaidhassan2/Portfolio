@@ -88,7 +88,6 @@ const Blog = () => {
                 ))}
             </div>
             {/* Blog Posts Section */}
-    {/*
             <div className='mt-10 flex flex-wrap gap-7'>
                 <AnimatePresence mode='wait'>
                     {filteredPosts.map((post, index) => (
@@ -96,7 +95,6 @@ const Blog = () => {
                     ))}
                 </AnimatePresence>
             </div>
-            */}
         </motion.div>
     );
 };
